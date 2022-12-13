@@ -2,9 +2,21 @@
   "name": "badge",
   "version": "0.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "module": "esm/index.js",
+  "sideEffects": false,
+  "files": [
+    "lib/",
+    "esm/"
+  ],
+  "types": "lib/index.d.ts",
+  "typings": "lib/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build:clean": "tsc --build --clean",
+    "build:cjs": "tsc",
+    "build:es": "tsc -m esNext --outDir esm",
+    "build": "npm run build:cjs && npm run build:es",
+    "release": "npm run build && rltb"
   },
   "repository": {
     "type": "git",
@@ -16,5 +28,14 @@
   "bugs": {
     "url": "https://github.com/nmsn/badge/issues"
   },
-  "homepage": "https://github.com/nmsn/badge#readme"
+  "homepage": "https://github.com/nmsn/badge#readme",
+  "devDependencies": {
+    "@types/node": "^18.11.13",
+    "release-toolbox": "0.0.3",
+    "tslib": "^2.4.1",
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "query-string": "^8.0.1"
+  }
 }
