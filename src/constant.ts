@@ -4,6 +4,8 @@ export type BaseBadgeType = {
   backgroundColor: string;
 };
 
+export const baseUrl = "https://img.shields.io/badge";
+
 export const baseBadges: BaseBadgeType[] = [
   {
     title: "JavaScript",
