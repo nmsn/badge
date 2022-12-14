@@ -39,7 +39,7 @@ const formatBackgroundColorParam = (color: string) => {
 const formatBadgeConstant = (badges: BaseBadgeType[]) => {
   return badges.map((item) => ({
     ...item,
-    logo: item.title,
+    logo: item.logo ? item.logo : item.title,
     backgroundColor: formatBackgroundColorParam(item.backgroundColor),
   }));
 };
@@ -60,7 +60,10 @@ const saveContent = (content: string, fileName: string) => {
   });
 };
 
-export const makeBadge = (badges: BaseBadgeType[] = baseBadges, fileName: string) => {
+export const makeBadge = (
+  badges: BaseBadgeType[] = baseBadges,
+  fileName: string
+) => {
   const fullBadgeImgs = formatBadgeConstant(badges).map((item) =>
     makeImg(makeBadgeUrl(item))
   );

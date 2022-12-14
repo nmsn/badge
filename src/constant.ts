@@ -2,6 +2,7 @@
 export type BaseBadgeType = {
   title: string;
   backgroundColor: string;
+  logo?: string;
 };
 
 export const baseUrl = "https://img.shields.io/badge";
@@ -56,8 +57,9 @@ export const baseBadges: BaseBadgeType[] = [
     backgroundColor: "#DD3A0A",
   },
   {
-    title: "Sass",
-    backgroundColor: "#CC6699",
+    title: "StyledComponents",
+    logo: "styled-components",
+    backgroundColor: "#DB7093",
   },
   {
     title: "Tailwind CSS",
