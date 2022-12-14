@@ -19,7 +19,8 @@
     "build:cjs": "tsc",
     "build:es": "tsc -m esNext --outDir esm",
     "build": "npm run build:cjs && npm run build:es",
-    "release": "npm run build && rltb"
+    "release": "npm run build && rltb",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -34,6 +35,13 @@
   "homepage": "https://github.com/nmsn/badge#readme",
   "devDependencies": {
     "@types/node": "^18.11.13",
+    "@typescript-eslint/eslint-plugin": "^5.46.1",
+    "@typescript-eslint/parser": "^5.46.1",
+    "eslint": "^8.29.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "husky": "^8.0.0",
+    "lint-staged": "^13.1.0",
     "prettier": "2.8.1",
     "release-toolbox": "0.0.3",
     "tslib": "^2.4.1",
