@@ -89,4 +89,24 @@ export const baseBadges: BaseBadgeType[] = [
     title: "Markdown",
     backgroundColor: "#000000",
   },
+  {
+    title: "Babel",
+    backgroundColor: "#F9DC3E",
+  },
+  {
+    title: "esbuild",
+    backgroundColor: "#FFCF00",
+  },
+  {
+    title: "SWC",
+    backgroundColor: "#FFFFFF",
+  },
+  {
+    title: "ESLint",
+    backgroundColor: "#4B32C3",
+  },
+  {
+    title: "Prettier",
+    backgroundColor: "#F7B93E",
+  },
 ];
