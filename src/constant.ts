@@ -68,6 +68,18 @@ export const baseBadges: BaseBadgeType[] = [
     backgroundColor: "#E33332",
   },
   {
+    title: "Webpack",
+    backgroundColor: "#8DD6F9",
+  },
+  {
+    title: "Rollup",
+    backgroundColor: "#EC4A3F",
+  },
+  {
+    title: "Vite",
+    backgroundColor: "#646CFF",
+  },
+  {
     title: "Jest",
     backgroundColor: "#C21325",
   },
