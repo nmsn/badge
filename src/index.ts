@@ -11,10 +11,20 @@ const prompts = [
     message: "Select the option what you want to generate a badge?",
     pageSize: 10,
     choices: baseBadges.map((item) => ({
-      name: `${item.title} ${chalk
-        .hex(item.backgroundColor)
-        .inverse(" C ")}`,
+      name: `${item.title} ${chalk.hex(item.backgroundColor).inverse(" C ")}`,
       value: item.title,
+    })),
+  },
+  {
+    type: "list",
+    name: "tagType",
+    message: "Select the type of output",
+    choices: [
+      { value: "md", name: "markdown-tag" },
+      { value: "img", name: "html-img" },
+    ].map((item) => ({
+      name: item.name,
+      value: item.value,
     })),
   },
   {
@@ -33,9 +43,9 @@ const filterSelectedBadge = (
 };
 
 export default async () => {
-  const { badges, fileName } = await inquirer.prompt(prompts);
+  const { badges, fileName, tagType } = await inquirer.prompt(prompts);
 
   const selectedBadges = filterSelectedBadge(baseBadges, badges);
 
-  makeBadge(selectedBadges, fileName);
+  makeBadge(selectedBadges, fileName, tagType);
 };

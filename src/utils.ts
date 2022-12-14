@@ -48,6 +48,10 @@ const makeImg = (url: string) => {
   return `<img src="${url}" />`;
 };
 
+const makeMdImgTag = (url: string, title?: string) => {
+  return `![${title ?? url}](${url})`;
+};
+
 const saveContent = (content: string, fileName: string) => {
   fs.writeFile(`./${fileName}.md`, content, (err) => {
     if (err) {
@@ -62,11 +66,14 @@ const saveContent = (content: string, fileName: string) => {
 
 export const makeBadge = (
   badges: BaseBadgeType[] = baseBadges,
-  fileName: string
+  fileName: string,
+  tagType: "md" | "html" = "md"
 ) => {
-  const fullBadgeImgs = formatBadgeConstant(badges).map((item) =>
-    makeImg(makeBadgeUrl(item))
-  );
+  const fullBadgeImgs = formatBadgeConstant(badges).map((item) => {
+    return tagType === "md"
+      ? makeMdImgTag(makeBadgeUrl(item), item.title)
+      : makeImg(makeBadgeUrl(item));
+  });
 
   saveContent(fullBadgeImgs.join("\n"), fileName);
 };
