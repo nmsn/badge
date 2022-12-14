@@ -1,8 +1,8 @@
-import fs from "fs";
-import path from "path";
-import queryString from "query-string";
-import type { BaseBadgeType } from "./constant";
-import { baseUrl, baseBadges } from "./constant";
+import fs from 'fs';
+import path from 'path';
+import queryString from 'query-string';
+import type { BaseBadgeType } from './constant';
+import { baseUrl, baseBadges } from './constant';
 
 type BadgeType = {
   title: string;
@@ -18,22 +18,22 @@ const makeBadgeUrl = ({
   title,
   logo,
   backgroundColor,
-  label = "",
-  logoColor = "white",
-  style = "flat",
+  label = '',
+  logoColor = 'white',
+  style = 'flat',
 }: BadgeType) => {
   const lastRouter = { label, title, backgroundColor };
 
   const params = { style, logo, logoColor };
 
   return queryString.stringifyUrl({
-    url: `${baseUrl}/${Object.values(lastRouter).join("-")}`,
+    url: `${baseUrl}/${Object.values(lastRouter).join('-')}`,
     query: params,
   });
 };
 
 const formatBackgroundColorParam = (color: string) => {
-  return color.startsWith("#") ? color.slice(1) : color;
+  return color.startsWith('#') ? color.slice(1) : color;
 };
 
 const formatBadgeConstant = (badges: BaseBadgeType[]) => {
@@ -67,13 +67,13 @@ const saveContent = (content: string, fileName: string) => {
 export const makeBadge = (
   badges: BaseBadgeType[] = baseBadges,
   fileName: string,
-  tagType: "md" | "html" = "md"
+  tagType: 'md' | 'html' = 'md'
 ) => {
   const fullBadgeImgs = formatBadgeConstant(badges).map((item) => {
-    return tagType === "md"
+    return tagType === 'md'
       ? makeMdImgTag(makeBadgeUrl(item), item.title)
       : makeImg(makeBadgeUrl(item));
   });
 
-  saveContent(fullBadgeImgs.join("\n"), fileName);
+  saveContent(fullBadgeImgs.join('\n'), fileName);
 };
