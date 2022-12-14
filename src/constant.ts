@@ -109,4 +109,24 @@ export const baseBadges: BaseBadgeType[] = [
     title: 'Prettier',
     backgroundColor: '#F7B93E',
   },
+  {
+    title: 'Git',
+    backgroundColor: '#F05032',
+  },
+  {
+    title: 'GitHub',
+    backgroundColor: '#181717',
+  },
+  {
+    title: 'npm',
+    backgroundColor: '#CB3837',
+  },
+  {
+    title: 'Yarn',
+    backgroundColor: '#2C8EBB',
+  },
+  {
+    title: 'pnpm',
+    backgroundColor: '#F69220',
+  },
 ];
