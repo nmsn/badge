@@ -1,4 +1,5 @@
 import queryString from "query-string";
+import fs from "fs";
 
 type BadgeType = {
   title: string;
@@ -12,7 +13,7 @@ type BadgeType = {
 
 const baseUrl = "https://img.shields.io/badge";
 
-const makeBadge = ({
+const makeBadgeUrl = ({
   title,
   logo,
   backgroundColor,
@@ -30,4 +31,16 @@ const makeBadge = ({
   });
 };
 
-export default makeBadge;
+export default makeBadgeUrl;
+
+const saveResult = () => {
+  fs.writeFile(`./${fileName}.md`, md, (err) => {
+    if (err) {
+      //sd
+      console.error(err);
+      return;
+    }
+    //文件写入成功。
+    console.log(path.join(__dirname, `${fileName}.md`));
+  });
+};

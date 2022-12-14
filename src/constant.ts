@@ -1,5 +1,10 @@
 /** https://simpleicons.org/ */
-export const baseBadge = [
+export type BaseBadgeType = {
+  title: string;
+  backgroundColor: string;
+};
+
+export const baseBadges: BaseBadgeType[] = [
   {
     title: "JavaScript",
     backgroundColor: "#F7DF1E",
