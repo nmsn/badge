@@ -2,23 +2,28 @@
   "name": "make-badge",
   "version": "0.0.2",
   "description": "",
-  "main": "lib/index.js",
-  "module": "esm/index.js",
+  "type": "module",
   "sideEffects": false,
   "files": [
-    "lib/",
-    "esm/"
+    "lib/"
   ],
-  "types": "lib/index.d.ts",
-  "typings": "lib/index.d.ts",
   "bin": {
     "badge": "/lib/cli.js"
   },
+  "main": "lib/index.js",
+  "module": "lib/index.js",
+  "types": "./lib/index.d.ts",
+  "typings": "lib/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./lib/index.js",
+      "types": "./lib/index.d.ts"
+    }
+  },
   "scripts": {
     "build:clean": "tsc --build --clean",
-    "build:cjs": "tsc",
-    "build:es": "tsc -m esNext --outDir esm",
-    "build": "npm run build:cjs && npm run build:es",
+    "build:es": "tsc",
+    "build": "npm run build:clean && npm run build:es",
     "release": "npm run build && rltb",
     "prepare": "husky install"
   },
@@ -51,5 +56,8 @@
     "chalk": "^5.2.0",
     "inquirer": "^9.1.4",
     "query-string": "^8.0.1"
-  }
+  },
+  "engines": {
+		"node": ">=16"
+	}
 }

@@ -1,8 +1,12 @@
 import fs from 'fs';
 import path from 'path';
 import queryString from 'query-string';
-import type { BaseBadgeType } from './constant';
-import { baseUrl, baseBadges } from './constant';
+import { fileURLToPath } from 'url';
+import type { BaseBadgeType } from './constant.js';
+import { baseUrl, baseBadges } from './constant.js';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 type BadgeType = {
   title: string;
