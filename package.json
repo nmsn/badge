@@ -32,8 +32,13 @@
     "type": "git",
     "url": "git+https://github.com/nmsn/badge.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "badge",
+    "img",
+    "markdown",
+    "shields"
+  ],
+  "author": "nmsn",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/nmsn/badge/issues"
