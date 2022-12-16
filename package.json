@@ -23,6 +23,7 @@
   "scripts": {
     "build:clean": "tsc --build --clean",
     "build:es": "tsc",
+    "build:watch": "tsc --watch",
     "build": "npm run build:clean && npm run build:es",
     "release": "npm run build && rltb",
     "prepare": "husky install"
