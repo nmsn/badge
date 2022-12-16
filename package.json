@@ -1,6 +1,6 @@
 {
   "name": "make-badge",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Generate badges under the current directory.",
   "type": "module",
   "sideEffects": false,
