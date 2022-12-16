@@ -21,12 +21,12 @@
     }
   },
   "scripts": {
+    "prepare": "husky install",
     "build:clean": "tsc --build --clean",
     "build:es": "tsc",
     "build:watch": "tsc --watch",
     "build": "npm run build:clean && npm run build:es",
-    "release": "npm run build && rltb",
-    "prepare": "husky install"
+    "release": "npm run build && rltb"
   },
   "repository": {
     "type": "git",
@@ -45,6 +45,7 @@
   },
   "homepage": "https://github.com/nmsn/badge#readme",
   "devDependencies": {
+    "@types/inquirer": "^9.0.3",
     "@types/node": "^18.11.13",
     "@typescript-eslint/eslint-plugin": "^5.46.1",
     "@typescript-eslint/parser": "^5.46.1",
@@ -64,6 +65,6 @@
     "query-string": "^8.0.1"
   },
   "engines": {
-		"node": ">=16"
-	}
+    "node": ">=16"
+  }
 }
