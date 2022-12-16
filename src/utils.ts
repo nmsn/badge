@@ -31,7 +31,7 @@ const makeBadgeUrl = ({
   const params = { style, logo, logoColor };
 
   return queryString.stringifyUrl({
-    url: `${baseUrl}/${Object.values(lastRouter).join('-')}`,
+    url: encodeURI(`${baseUrl}/${Object.values(lastRouter).join('-')}`),
     query: params,
   });
 };
@@ -40,28 +40,10 @@ const formatBackgroundColorParam = (color: string) => {
   return color.startsWith('#') ? color.slice(1) : color;
 };
 
-const formatValidText = (text: string, type: 'logo' | 'title') => {
-  if (!text.includes(' ')) {
-    return text;
-  }
-
-  text = text.trim();
-
-  if (type === 'title') {
-    return text.replace(/\s*/g, '');
-  }
-
-  if (type === 'logo') {
-    return text.replace(/\s*/g, '-');
-  }
-
-  throw new Error('No valid title or logo.');
-};
-
 const formatBadgeConstant = (badges: BaseBadgeType[]) => {
   return badges.map((item) => ({
-    title: formatValidText(item.title, 'title'),
-    logo: item.logo ? formatValidText(item.logo, 'logo') : formatValidText(item.title, 'title'),
+    title: item.title,
+    logo: item?.logo ? item.logo : item.title,
     backgroundColor: formatBackgroundColorParam(item.backgroundColor),
   }));
 };
