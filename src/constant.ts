@@ -57,8 +57,7 @@ export const baseBadges: BaseBadgeType[] = [
     backgroundColor: '#DD3A0A',
   },
   {
-    title: 'StyledComponents',
-    logo: 'styled-components',
+    title: 'Styled Components',
     backgroundColor: '#DB7093',
   },
   {

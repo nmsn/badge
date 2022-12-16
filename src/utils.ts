@@ -40,10 +40,28 @@ const formatBackgroundColorParam = (color: string) => {
   return color.startsWith('#') ? color.slice(1) : color;
 };
 
+const formatValidText = (text: string, type: 'logo' | 'title') => {
+  if (!text.includes(' ')) {
+    return text;
+  }
+
+  text = text.trim();
+
+  if (type === 'title') {
+    return text.replace(/\s*/g, '');
+  }
+
+  if (type === 'logo') {
+    return text.replace(/\s*/g, '-');
+  }
+
+  throw new Error('No valid title or logo.');
+};
+
 const formatBadgeConstant = (badges: BaseBadgeType[]) => {
   return badges.map((item) => ({
-    ...item,
-    logo: item.logo ? item.logo : item.title,
+    title: formatValidText(item.title, 'title'),
+    logo: item.logo ? formatValidText(item.logo, 'logo') : formatValidText(item.title, 'title'),
     backgroundColor: formatBackgroundColorParam(item.backgroundColor),
   }));
 };
