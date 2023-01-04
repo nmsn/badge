@@ -128,4 +128,8 @@ export const baseBadges: BaseBadgeType[] = [
     title: 'pnpm',
     backgroundColor: '#F69220',
   },
+  {
+    title: 'Redux',
+    backgroundColor: '#764ABC',
+  },
 ];
