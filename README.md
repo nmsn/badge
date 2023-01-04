@@ -38,3 +38,4 @@ Generate badges locally.
 ![npm](https://img.shields.io/badge/-npm-CB3837?logo=npm&logoColor=white&style=flat)
 ![Yarn](https://img.shields.io/badge/-Yarn-2C8EBB?logo=Yarn&logoColor=white&style=flat)
 ![pnpm](https://img.shields.io/badge/-pnpm-F69220?logo=pnpm&logoColor=white&style=flat)
+![Redux](https://img.shields.io/badge/-Redux-764ABC?logo=Redux&logoColor=white&style=flat)
