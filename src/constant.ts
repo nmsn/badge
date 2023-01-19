@@ -41,6 +41,10 @@ export const baseBadges: BaseBadgeType[] = [
     backgroundColor: '#33333D',
   },
   {
+    title: 'NestJs',
+    backgroundColor: '#E0234E',
+  },
+  {
     title: 'Less',
     backgroundColor: '#1D365D',
   },
