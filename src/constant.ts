@@ -69,6 +69,10 @@ export const baseBadges: BaseBadgeType[] = [
     backgroundColor: '#06B6D4',
   },
   {
+    title: 'Ant Design',
+    backgroundColor: '#0170FE',
+  },
+  {
     title: 'Testing Library',
     backgroundColor: '#E33332',
   },
