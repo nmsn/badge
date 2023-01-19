@@ -2,3 +2,4 @@ node_modules/
 lib/
 esm/
 BADGE.md
+release-toolbox.json
