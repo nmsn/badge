@@ -144,4 +144,8 @@ export const baseBadges: BaseBadgeType[] = [
     title: 'Redux',
     backgroundColor: '#764ABC',
   },
+  {
+    title: 'MDX',
+    backgroundColor: '#1B1F24',
+  },
 ];
