@@ -71,7 +71,7 @@ const saveContent = (content: string, fileName: string) => {
 export const makeBadge = (
   badges: BaseBadgeType[] = baseBadges,
   fileName: string,
-  tagType: 'md' | 'html' = 'md'
+  tagType: 'md' | 'img' = 'md'
 ) => {
   const fullBadgeImgs = formatBadgeConstant(badges).map((item) => {
     return tagType === 'md'
