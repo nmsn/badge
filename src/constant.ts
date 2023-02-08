@@ -148,4 +148,8 @@ export const baseBadges: BaseBadgeType[] = [
     title: 'MDX',
     backgroundColor: '#1B1F24',
   },
+  {
+    title: 'Vercel',
+    backgroundColor: '#000000',
+  },
 ];
