@@ -43,3 +43,4 @@ Generate badges locally.
 ![pnpm](https://img.shields.io/badge/-pnpm-F69220?logo=pnpm&logoColor=white&style=flat)
 ![Redux](https://img.shields.io/badge/-Redux-764ABC?logo=Redux&logoColor=white&style=flat)
 ![MDX](https://img.shields.io/badge/-MDX-1B1F24?logo=MDX&logoColor=white&style=flat)
+![Vercel](https://img.shields.io/badge/-Vercel-000000?logo=Vercel&logoColor=white&style=flat)
