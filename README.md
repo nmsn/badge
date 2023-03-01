@@ -9,6 +9,8 @@ English | [简体中文](./README.zh-CN.md)
 
 Generate beautiful badges locally.
 
+Badges from: [https://simpleicons.org/](https://simpleicons.org/)
+
 ## Features
 
 - Use gui to select badges.
@@ -69,6 +71,7 @@ badge // Command line execution, go to gui and select badges
 ## Todo
 
 - Add more badges.
+- Optimize package size.
 
 ## Contributing
 
