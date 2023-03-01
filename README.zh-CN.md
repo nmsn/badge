@@ -4,6 +4,8 @@
 ![node version](https://img.shields.io/node/v/make-badge)
 ![size](https://img.shields.io/bundlephobia/min/make-badge)
 ![license](https://img.shields.io/npm/l/make-badge)
+![last commit](https://img.shields.io/github/last-commit/nmsn/badge)
+![commit-activity](https://img.shields.io/github/commit-activity/y/nmsn/badge)
 
 [English](./README.md) | 简体中文
 
