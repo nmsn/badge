@@ -5,29 +5,29 @@
 ![size](https://img.shields.io/bundlephobia/min/make-badge)
 ![license](https://img.shields.io/npm/l/make-badge)
 
-English | [简体中文](./README.zh-CN.md)
+[English](./README.md) | 简体中文
 
-Generate beautiful badges locally.
+在本地生成好看的技术栈徽标
 
-## Features
+## 功能
 
-- Use gui to select badges.
-- Generate beautiful badges in the current directory.
-- Code with `typescript`.
+- 可视化选择徽标
+- 当前目录下生成徽标 `Markdown` 文件
+- 使用 `typescript` 编写
 
-## Install
-
-```shell
-npm install make-badge -g // Global Installation
-```
-
-## Usage
+## 安装
 
 ```shell
-badge // Command line execution, go to gui and select badges
+npm install make-badge -g // 全局安装
 ```
 
-## Valid Badges
+## 使用
+
+```shell
+badge // 命令行执行，进入 gui 选择徽标
+```
+
+## 现有的徽标
 
 ![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?logo=JavaScript&logoColor=white&style=flat)
 ![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?logo=TypeScript&logoColor=white&style=flat)
@@ -66,14 +66,14 @@ badge // Command line execution, go to gui and select badges
 ![MDX](https://img.shields.io/badge/-MDX-1B1F24?logo=MDX&logoColor=white&style=flat)
 ![Vercel](https://img.shields.io/badge/-Vercel-000000?logo=Vercel&logoColor=white&style=flat)
 
-## Todo
+## 待完成功能
 
-- Add more badges.
+- 增加更多徽标
 
-## Contributing
+## 贡献者
 
 - [nmsn](https://github.com/nmsn)
 
-## License
+## 协议
 
 [MIT License](https://github.com/nmsn/badge/blob/main/LICENSE)
