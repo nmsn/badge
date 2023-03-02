@@ -5,7 +5,7 @@
 ![size](https://img.shields.io/bundlephobia/min/make-badge)
 ![license](https://img.shields.io/npm/l/make-badge)
 ![last commit](https://img.shields.io/github/last-commit/nmsn/badge)
-![commit-activity](https://img.shields.io/github/commit-activity/y/nmsn/badge)
+![commit activity](https://img.shields.io/github/commit-activity/y/nmsn/badge)
 
 [English](./README.md) | 简体中文
 
@@ -72,8 +72,8 @@ badge // 命令行执行，进入 gui 选择徽标
 
 ## 待完成功能
 
-- 增加更多徽标
-- 优化包体积
+- [ ] 增加更多徽标
+- [ ] 优化包体积
 
 ## 贡献者
 

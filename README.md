@@ -72,8 +72,8 @@ badge // Command line execution, go to gui and select badges
 
 ## Todo
 
-- Add more badges.
-- Optimize package size.
+- [ ] Add more badges.
+- [ ] Optimize package size.
 
 ## Contributing
 
