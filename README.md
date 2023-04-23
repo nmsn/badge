@@ -74,6 +74,8 @@ badge // Command line execution, go to gui and select badges
 
 - [ ] Add more badges.
 - [ ] Optimize package size.
+- [ ] Display online.
+  - [ ] Clipboard.
 
 ## Contributing
 
