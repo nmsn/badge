@@ -69,6 +69,14 @@ export const baseBadges: BaseBadgeType[] = [
     backgroundColor: '#06B6D4',
   },
   {
+    title: 'Windi Css',
+    backgroundColor: '#48B0F1',
+  },
+  {
+    title: 'UnoCSS',
+    backgroundColor: '#333333',
+  },
+  {
     title: 'Ant Design',
     backgroundColor: '#0170FE',
   },
