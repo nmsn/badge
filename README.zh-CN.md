@@ -54,7 +54,7 @@ badge // 命令行执行，进入 gui 选择徽标
 ![MUI](https://img.shields.io/badge/-MUI-007FFF?logo=MUI&logoColor=white&style=flat)
 ![Testing Library](https://img.shields.io/badge/-Testing%20Library-E33332?logo=Testing%20Library&logoColor=white&style=flat)
 ![Webpack](https://img.shields.io/badge/-Webpack-8DD6F9?logo=Webpack&logoColor=white&style=flat)
-![Rollup](https://img.shields.io/badge/-Rollup-EC4A3F?logo=Rollup&logoColor=white&style=flat)
+![rollup.js](https://img.shields.io/badge/-rollup.js-EC4A3F?logo=rollup.js&logoColor=white&style=flat)
 ![Vite](https://img.shields.io/badge/-Vite-646CFF?logo=Vite&logoColor=white&style=flat)
 ![Jest](https://img.shields.io/badge/-Jest-C21325?logo=Jest&logoColor=white&style=flat)
 ![Markdown](https://img.shields.io/badge/-Markdown-000000?logo=Markdown&logoColor=white&style=flat)
