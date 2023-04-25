@@ -93,7 +93,7 @@ export const baseBadges: BaseBadgeType[] = [
     backgroundColor: '#8DD6F9',
   },
   {
-    title: 'Rollup',
+    title: 'rollup.js',
     backgroundColor: '#EC4A3F',
   },
   {
