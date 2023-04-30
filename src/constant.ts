@@ -21,7 +21,7 @@ export const baseBadges: BaseBadgeType[] = [
     backgroundColor: '#61DAFB',
   },
   {
-    title: 'Vue',
+    title: 'Vue.js',
     backgroundColor: '#4FC08D',
   },
   {
