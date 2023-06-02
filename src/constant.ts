@@ -9,6 +9,14 @@ export const baseUrl = 'https://img.shields.io/badge';
 
 export const baseBadges: BaseBadgeType[] = [
   {
+    title: 'HTML5',
+    backgroundColor: 'html5',
+  },
+  {
+    title: 'CSS3',
+    backgroundColor: '#1572B6',
+  },
+  {
     title: 'JavaScript',
     backgroundColor: '#F7DF1E',
   },
