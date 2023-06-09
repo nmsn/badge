@@ -25,6 +25,10 @@ export const baseBadges: BaseBadgeType[] = [
     backgroundColor: '#3178C6',
   },
   {
+    title: 'jQuery',
+    backgroundColor: '#0769AD',
+  },
+  {
     title: 'React',
     backgroundColor: '#61DAFB',
   },
@@ -95,6 +99,10 @@ export const baseBadges: BaseBadgeType[] = [
   {
     title: 'Testing Library',
     backgroundColor: '#E33332',
+  },
+  {
+    title: 'Vitest',
+    backgroundColor: '#6E9F18',
   },
   {
     title: 'Webpack',
