@@ -176,4 +176,12 @@ export const baseBadges: BaseBadgeType[] = [
     title: 'Vercel',
     backgroundColor: '#000000',
   },
+  {
+    title: 'Lerna',
+    backgroundColor: '#9333EA',
+  },
+  {
+    title: 'Turborepo',
+    backgroundColor: '#EF4444',
+  },
 ];

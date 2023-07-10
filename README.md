@@ -37,6 +37,7 @@ badge // Command line execution, go to gui and select badges
 ![CSS3](https://img.shields.io/badge/-CSS3-1572B6?logo=CSS3&logoColor=white&style=flat)
 ![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?logo=JavaScript&logoColor=white&style=flat)
 ![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?logo=TypeScript&logoColor=white&style=flat)
+![jQuery](https://img.shields.io/badge/-jQuery-0769AD?logo=jQuery&logoColor=white&style=flat)
 ![React](https://img.shields.io/badge/-React-61DAFB?logo=React&logoColor=white&style=flat)
 ![Vue.js](https://img.shields.io/badge/-Vue.js-4FC08D?logo=Vue.js&logoColor=white&style=flat)
 ![Next.js](https://img.shields.io/badge/-Next.js-000000?logo=Next.js&logoColor=white&style=flat)
@@ -55,6 +56,7 @@ badge // Command line execution, go to gui and select badges
 ![Ant Design](https://img.shields.io/badge/-Ant%20Design-0170FE?logo=Ant%20Design&logoColor=white&style=flat)
 ![MUI](https://img.shields.io/badge/-MUI-007FFF?logo=MUI&logoColor=white&style=flat)
 ![Testing Library](https://img.shields.io/badge/-Testing%20Library-E33332?logo=Testing%20Library&logoColor=white&style=flat)
+![Vitest](https://img.shields.io/badge/-Vitest-6E9F18?logo=Vitest&logoColor=white&style=flat)
 ![Webpack](https://img.shields.io/badge/-Webpack-8DD6F9?logo=Webpack&logoColor=white&style=flat)
 ![rollup.js](https://img.shields.io/badge/-rollup.js-EC4A3F?logo=rollup.js&logoColor=white&style=flat)
 ![Vite](https://img.shields.io/badge/-Vite-646CFF?logo=Vite&logoColor=white&style=flat)
@@ -73,6 +75,8 @@ badge // Command line execution, go to gui and select badges
 ![Redux](https://img.shields.io/badge/-Redux-764ABC?logo=Redux&logoColor=white&style=flat)
 ![MDX](https://img.shields.io/badge/-MDX-1B1F24?logo=MDX&logoColor=white&style=flat)
 ![Vercel](https://img.shields.io/badge/-Vercel-000000?logo=Vercel&logoColor=white&style=flat)
+![Lerna](https://img.shields.io/badge/-Lerna-9333EA?logo=Lerna&logoColor=white&style=flat)
+![Turborepo](https://img.shields.io/badge/-Turborepo-EF4444?logo=Turborepo&logoColor=white&style=flat)
 
 ## Todo
 
