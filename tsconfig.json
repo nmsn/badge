@@ -1,16 +1,14 @@
 {
   "compilerOptions": {
     "strict": true,
-    "resolveJsonModule": true,
     "rootDir": "src",
-    "outDir": "lib",
     "allowJs": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
     "isolatedModules": true,
     "removeComments": true,
-    "target": "es2022",
-    "module": "node16",
+    "target": "ESNext",
+    "module": "ESNext",
     "declaration": true,
     "pretty": true,
     "sourceMap": false,

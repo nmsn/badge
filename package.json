@@ -5,27 +5,27 @@
   "type": "module",
   "sideEffects": false,
   "files": [
-    "lib/"
+    "lib",
+    "es",
+    "package.json",
+    "README.md"
   ],
   "bin": {
-    "badge": "/lib/cli.js"
+    "badge": "./es/cli.js"
   },
-  "main": "lib/index.js",
-  "module": "lib/index.js",
-  "types": "./lib/index.d.ts",
-  "typings": "lib/index.d.ts",
+  "main": "./lib/index.js",
+  "module": "./es/index.js",
+  "types": "./es/index.d.ts",
   "exports": {
     ".": {
-      "import": "./lib/index.js",
-      "types": "./lib/index.d.ts"
+      "require": "./lib/index.js",
+      "import": "./es/index.js",
+      "types": "./es/index.d.ts"
     }
   },
   "scripts": {
     "prepare": "husky install",
-    "build:clean": "tsc --build --clean",
-    "build:es": "tsc",
-    "build:watch": "tsc --watch",
-    "build": "npm run build:clean && npm run build:es",
+    "build": "rollup -c",
     "release": "npm run build && rltb"
   },
   "repository": {
@@ -45,6 +45,9 @@
   },
   "homepage": "https://github.com/nmsn/badge#readme",
   "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.2",
+    "@rollup/plugin-json": "^6.0.0",
+    "@rollup/plugin-node-resolve": "^15.1.0",
     "@types/inquirer": "^9.0.3",
     "@types/node": "^20.2.6",
     "@typescript-eslint/eslint-plugin": "^5.59.9",
@@ -56,6 +59,9 @@
     "lint-staged": "^13.2.2",
     "prettier": "2.8.8",
     "release-toolbox": "0.2.0",
+    "rollup": "^3.26.2",
+    "rollup-plugin-clear": "^2.0.7",
+    "rollup-plugin-typescript2": "^0.35.0",
     "tslib": "^2.5.3",
     "typescript": "^5.1.3"
   },
