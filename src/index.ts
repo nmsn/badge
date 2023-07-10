@@ -1,8 +1,8 @@
 import inquirer from 'inquirer';
 import chalk from 'chalk';
-import type { BaseBadgeType } from './constant.js';
-import { baseBadges } from './constant.js';
-import { makeBadge } from './utils.js';
+import type { BaseBadgeType } from './constant';
+import { baseBadges } from './constant';
+import { makeBadge } from './utils';
 
 type AnswersType = {
   isAll: boolean;

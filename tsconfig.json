@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "strict": true,
+    "moduleResolution": "Node",
     "rootDir": "src",
     "allowJs": true,
     "esModuleInterop": true,
