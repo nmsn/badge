@@ -65,8 +65,8 @@ devDependencies:
     specifier: ^2.0.7
     version: 2.0.7
   rollup-plugin-typescript2:
-    specifier: ^0.35.0
-    version: 0.35.0(rollup@3.29.3)(typescript@5.2.2)
+    specifier: ^0.36.0
+    version: 0.36.0(rollup@3.29.3)(typescript@5.2.2)
   tslib:
     specifier: ^2.6.2
     version: 2.6.2
@@ -1869,8 +1869,8 @@ packages:
       rimraf: 2.7.1
     dev: true
 
-  /rollup-plugin-typescript2@0.35.0(rollup@3.29.3)(typescript@5.2.2):
-    resolution: {integrity: sha512-szcIO9hPUx3PhQl91u4pfNAH2EKbtrXaES+m163xQVE5O1CC0ea6YZV/5woiDDW3CR9jF2CszPrKN+AFiND0bg==}
+  /rollup-plugin-typescript2@0.36.0(rollup@3.29.3)(typescript@5.2.2):
+    resolution: {integrity: sha512-NB2CSQDxSe9+Oe2ahZbf+B4bh7pHwjV5L+RSYpCu7Q5ROuN94F9b6ioWwKfz3ueL3KTtmX4o2MUH2cgHDIEUsw==}
     peerDependencies:
       rollup: '>=1.26.3'
       typescript: '>=2.4.0'
@@ -1879,7 +1879,7 @@ packages:
       find-cache-dir: 3.3.2
       fs-extra: 10.1.0
       rollup: 3.29.3
-      semver: 7.3.8
+      semver: 7.5.4
       tslib: 2.6.2
       typescript: 5.2.2
     dev: true
@@ -1933,6 +1933,14 @@ packages:
 
   /semver@7.3.8:
     resolution: {integrity: sha512-NB1ctGL5rlHrPJtFDVIVzTyQylMLu9N9VICA6HSFJo8MCGVTMW6gfpicwKmmK/dAjTOrqu5l63JJOpDSrAis3A==}
+    engines: {node: '>=10'}
+    hasBin: true
+    dependencies:
+      lru-cache: 6.0.0
+    dev: true
+
+  /semver@7.5.4:
+    resolution: {integrity: sha512-1bCSESV6Pv+i21Hvpxp3Dx+pSD8lIPt8uVjRrxAUt/nbswYc+tK6Y2btiULjd4+fnq15PX+nqQDC7Oft7WkwcA==}
     engines: {node: '>=10'}
     hasBin: true
     dependencies:
